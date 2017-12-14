@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Train Timetable</title>
+
+
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
+
+
+<link rel="stylesheet" type="text/css" href="reset.css">
+ <link rel="stylesheet" type="text/css" href="train.css">
+
+
+</head>
+<body>
+<!-- Employee Tracker -->
+<div class="container">
+	<div class="jumbotron">
+		<h1 class="text-center"> SuperDave Train</h1>
+		<p class="text-center">The little train that could!</p>
+		</div>
+
+		<div class="panel panel-default">
+		<div id="heading" class="panel-heading">
+				<h4>Current Train Schedules</h4>
+			</div>
+		<div class="panel-body">
+			<table class="table table-bordered" id="trainSchedule">
+				<tr>
+				<th> Train Name </th>
+				<th> Destination </th>
+				<th> Frequency (min)</th>
+				<th> Next Arrival </th>
+				<th> Minutes Away </th>
+					</tr>
+				</table>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-md-12">
+			<div class="panel panel-default">
+				<div id="heading" class="panel-heading">
+					<h4>Add Train</h4>
+				</div>
+
+				<form role="form" class="panel-body">
+						<div class="form-group">
+						<label for="">Train</label>
+						<input type="text" class="form-control" id="trainName" placeholder="">
+						</div>
+						<div class="form-group">
+						<label for="">Destination</label>
+						<input type="text" class="form-control" id="destination" placeholder="">
+						</div>
+						<div class="form-group">
+						<label for="">First Train Time (HH:mm - military time)</label>
+						<input type="text" class="form-control" id="time" placeholder="">
+						</div>
+						<div class="form-group">
+						<label for="">Frequency (min)</label>
+						<input type="number" class="form-control" id="frequency" placeholder="">
+						</div>
+						<button type="submit" class="btn btn-default" id="submitButton">Submit</button>
+					</form>
+			</div>
+			</div>
+		</div>
+	</div>
+
+
+<script src="https://www.gstatic.com/firebasejs/4.8.0/firebase.js"></script>
+<script src="train.js"></script>
+
+
+</body>
+</html>
